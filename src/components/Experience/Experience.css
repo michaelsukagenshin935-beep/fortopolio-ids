@@ -1,0 +1,127 @@
+.experience-section {
+  background-color: var(--bg-primary);
+}
+
+.experience-reveal-header {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 3rem auto 0 auto;
+  padding-left: 2.5rem;
+  text-align: left;
+}
+
+/* Vertical drawing line */
+.experience-timeline-line {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--border-color);
+  transform-origin: top;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3.5rem;
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Timeline Dot Indicator */
+.timeline-dot {
+  position: absolute;
+  top: 6px;
+  left: -2.5rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--bg-primary);
+  border: 3px solid var(--accent);
+  z-index: 2;
+  transition: var(--transition-smooth);
+}
+
+.timeline-item:hover .timeline-dot {
+  background-color: var(--accent);
+  transform: scale(1.2);
+}
+
+/* Timeline Metadata */
+.timeline-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-year {
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  align-self: flex-start;
+  border: 1px solid var(--border-color);
+}
+
+.timeline-company {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Timeline Content */
+.timeline-content {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 6px;
+  transition: var(--transition-smooth);
+}
+
+.timeline-item:hover .timeline-content {
+  border-color: var(--border-hover);
+  background-color: var(--bg-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-role {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.timeline-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 576px) {
+  .experience-timeline {
+    padding-left: 2rem;
+  }
+  .timeline-dot {
+    left: -2.1rem;
+    width: 12px;
+    height: 12px;
+  }
+  .timeline-content {
+    padding: 1.5rem;
+  }
+}
