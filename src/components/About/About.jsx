@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import avatarImg from '../../assets/avatar.png';
+import avatarImg from '/me.jpeg';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './About.css';
@@ -84,25 +84,21 @@ const About = () => {
           {/* Text Summary Column */}
           <div className="about-content-column">
             <h3 className="about-lead about-text-reveal">
-              Membangun website modern dengan estetika minimalis & interaksi yang intuitif.
+             Membangun website modern yang cepat, responsif, dan mudah digunakan.
             </h3>
             
             <p className="about-description about-text-reveal">
-              Saya adalah seorang Front-End Developer yang fokus menghadirkan pengalaman pengguna luar biasa di ruang digital. Saya memadukan keahlian teknis pemrograman dengan pemahaman desain untuk melahirkan website yang tidak hanya berfungsi dengan baik, tetapi juga terlihat elegan, premium, dan interaktif di berbagai perangkat.
+              Saya adalah Front-End Developer yang berfokus pada pengembangan antarmuka website yang bersih, fungsional, dan nyaman digunakan. Dengan menggabungkan kemampuan pemrograman dan pemahaman desain, saya menciptakan pengalaman digital yang konsisten di berbagai perangkat.
             </p>
 
             <p className="about-description about-text-reveal">
-              Ketertarikan saya terletak pada detail halus, seperti transisi antar halaman yang mulus, struktur kode yang bersih dan teratur, serta whitespace yang seimbang. Saya percaya bahwa detail terkecil dapat merubah produk yang baik menjadi produk yang luar biasa.
+              Saya menyukai proses mengubah ide menjadi produk yang dapat digunakan secara nyata, mulai dari menulis kode yang terstruktur hingga memperhatikan detail visual yang membuat sebuah website terasa lebih profesional dan menarik.
             </p>
 
             <div className="about-info-grid about-text-reveal">
               <div className="about-info-item">
-                <span className="info-label">Lokasi:</span>
-                <span className="info-value">Jakarta, Indonesia</span>
               </div>
               <div className="about-info-item">
-                <span className="info-label">Status Pekerjaan:</span>
-                <span className="info-value">Tersedia untuk Freelance & Full-time</span>
               </div>
             </div>
           </div>

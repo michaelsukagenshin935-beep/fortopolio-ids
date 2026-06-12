@@ -53,7 +53,7 @@ const Hero = () => {
           </h1>
 
           <p className="hero-desc">
-            Saya mendedikasikan diri untuk merancang dan membangun antarmuka web modern yang memiliki performa tinggi, visual yang memikat, responsif, dan interaktif.
+            Saya berfokus pada perancangan dan pengembangan antarmuka web modern yang responsif, interaktif, serta memberikan pengalaman pengguna yang optimal.
           </p>
 
           <div className="hero-actions">

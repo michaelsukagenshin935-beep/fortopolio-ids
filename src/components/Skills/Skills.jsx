@@ -11,32 +11,26 @@ const Skills = () => {
     {
       name: 'HTML/CSS',
       rating: 5,
-      desc: 'Menguasai layouting responsif dengan CSS Grid & Flexbox, preprosesor Sass, serta metodologi BEM.'
     },
     {
       name: 'JavaScript',
       rating: 4,
-      desc: 'Pemahaman mendalam tentang ES6+, pemrograman asinkronus, DOM manipulation, dan integrasi API.'
     },
     {
       name: 'React.js',
       rating: 4,
-      desc: 'Mahir dalam mengelola state (Hooks, Context), siklus hidup komponen, performa re-rendering, dan router.'
     },
     {
       name: 'GSAP',
       rating: 4,
-      desc: 'Biasa membuat animasi interaktif yang dinamis, timeline kompleks, dan scroll-triggered animation.'
     },
     {
       name: 'UI/UX Design',
       rating: 3,
-      desc: 'Mampu membuat wireframe, prototipe fungsional di Figma, dan memahami konsep dasar arsitektur informasi.'
     },
     {
       name: 'Git/GitHub',
       rating: 4,
-      desc: 'Biasa menggunakan version control, alur kerja kolaboratif (Pull Request), pemecahan konflik, dan branching.'
     }
   ];
 
