@@ -7,7 +7,7 @@ import jsIcon from '../../assets/Java Script.png';
 import reactIcon from '../../assets/React.png';
 import gsapIcon from '../../assets/GSAP.png';
 import designIcon from '../../assets/Design.png';
-import githubIcon from '../../assets/Github.png';
+import githubIcon from '../../assets/GitHub.png';
 import './Skills.css';
 
 const Skills = () => {
