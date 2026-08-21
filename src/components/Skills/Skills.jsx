@@ -2,6 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import { Star } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import htmlIcon from '../../assets/HTML.png';
+import jsIcon from '../../assets/Java Script.png';
+import reactIcon from '../../assets/React.png';
+import gsapIcon from '../../assets/GSAP.png';
+import designIcon from '../../assets/Design.png';
+import githubIcon from '../../assets/Github.png';
 import './Skills.css';
 
 const Skills = () => {
@@ -11,26 +17,38 @@ const Skills = () => {
     {
       name: 'HTML/CSS',
       rating: 5,
+      icon: <img src={htmlIcon} alt="HTML/CSS" />,
+      iconClass: 'html',
     },
     {
       name: 'JavaScript',
       rating: 4,
+      icon: <img src={jsIcon} alt="JavaScript" />,
+      iconClass: 'js',
     },
     {
       name: 'React.js',
       rating: 4,
+      icon: <img src={reactIcon} alt="React.js" />,
+      iconClass: 'react',
     },
     {
       name: 'GSAP',
       rating: 4,
+      icon: <img src={gsapIcon} alt="GSAP" />,
+      iconClass: 'gsap',
     },
     {
       name: 'UI/UX Design',
       rating: 3,
+      icon: <img src={designIcon} alt="UI/UX Design" />,
+      iconClass: 'figma',
     },
     {
       name: 'Git/GitHub',
       rating: 4,
+      icon: <img src={githubIcon} alt="Git/GitHub" />,
+      iconClass: 'git',
     }
   ];
 
@@ -97,6 +115,7 @@ const Skills = () => {
         <div className="skills-grid">
           {skillsData.map((skill, index) => (
             <div className="skill-card" key={index}>
+              <div className={`skill-icon skill-icon--${skill.iconClass}`}>{skill.icon}</div>
               <div className="skill-card-header">
                 <h3 className="skill-name">{skill.name}</h3>
                 <div className="skill-rating">

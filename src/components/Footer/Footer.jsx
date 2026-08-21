@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, ArrowUp } from 'lucide-react';
-import { GithubIcon as Github, InstagramIcon as Instagram } from '../Icons';
+import { GithubIcon as Github, InstagramIcon as Instagram, WhatsappIcon } from '../Icons';
 import './Footer.css';
 
 const Footer = () => {
